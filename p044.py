@@ -8,7 +8,7 @@ def pentagon_numbers():
 		for j in range(1, i):
 			a = i*(3*i-1)/2
 			b = j*(3*j-1)/2
-			if is_pentagon(a+b) and is_pentagon(a-b):
+			if is_pentagonal(a+b) and is_pentagonal(a-b):
 				return a-b
 		i += 1
 
