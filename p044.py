@@ -1,7 +1,6 @@
 # Pentagon numbers
 # https://projecteuler.net/problem=44
-def is_pentagon(n):
-	return (1+(24*n+1)**0.5) % 6 == 0
+from lib import is_pentagon
 	
 def pentagon_numbers():
 	i = 1
