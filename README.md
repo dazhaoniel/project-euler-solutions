@@ -2,4 +2,4 @@
 
 [https://projecteuler.net/archives](https://projecteuler.net/archives)
 
-### Skipped
+I tried to teach my friend python so we started working on these problems together.
