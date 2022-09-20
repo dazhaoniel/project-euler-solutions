@@ -6,4 +6,4 @@ I tried to teach my friend python so we started working on these problems togeth
 
 ### Skipped
 
-P59, P51, P79
+P51, P79
