@@ -1,7 +1,7 @@
 # Prime pair sets
 # https://projecteuler.net/problem=60
 import itertools
-from lib import prime3
+from lib import prime3, is_prime
 
 primes = prime3(10000)
 
@@ -9,29 +9,20 @@ primes = prime3(10000)
 def cpp(l):
 	for p in itertools.permutations(l, 2):
 		n = p[0]*(10**len(str(p[1])))+p[1]
-		if n not in primes:
+		if not is_prime(n):
 			return False
 	return True
 
 def prime_pair_sets():
 	for a in primes:
 		for b in primes:
-			if b < a:
-				continue
-			if cpp([a, b]):
+			if b > a and cpp([a, b]):
 				for c in primes:
-					if c < b:
-						continue
-					if cpp([a, b, c]):
+					if c > b and cpp([a, b, c]):
 						for d in primes:
-							if d < c:
-								continue
-							if cpp([a, b, c, d]):
+							if d > c and cpp([a, b, c, d]):
 								for e in primes:
-									if e < d:
-										continue
-									print(a,b,c,d,e)
-									if cpp([a, b, c, d, e]):
+									if e > d and cpp([a, b, c, d, e]):
 										return sum([a,b,c,d,e])
 
 
