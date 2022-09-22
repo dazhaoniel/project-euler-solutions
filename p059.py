@@ -10,6 +10,7 @@ def xor_decryption():
 	numbers = [int(x) for x in text]
 	
 	return numbers
+	# sum of the original ascii letter values
 
 
 if __name__ == '__main__':
