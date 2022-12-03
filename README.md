@@ -7,3 +7,5 @@ I tried to teach my friend python so we started working on these problems togeth
 ### Skipped
 
 P51, P59, P79
+
+### Test
